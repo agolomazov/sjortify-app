@@ -10,7 +10,7 @@ module.exports = {
         red: 'hsl(0, 87%, 67%)',
         grayishViolet: 'hsl(257, 7%, 63%)',
         veryDarkBlue: 'hsl(255, 11%, 22%)',
-        verDarkViolet: 'hsl(260, 8%, 14%)'
+        veryDarkViolet: 'hsl(260, 8%, 14%)'
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif']
