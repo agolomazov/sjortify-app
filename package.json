@@ -1,0 +1,19 @@
+{
+  "name": "shortify-app",
+  "version": "1.0.0",
+  "description": "Shortify test markup application",
+  "main": "index.js",
+  "scripts": {
+    "styles": "npx tailwindcss -i ./src/assets/styles/main.css -o ./src/assets/styles/production.css --watch",
+    "serve": "parcel ./src/index.html --open --port 1234",
+    "start": "concurrently \"npm run styles\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "Anton Golomazov",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "parcel-bundler": "^1.12.5",
+    "tailwindcss": "^3.2.4"
+  }
+}
