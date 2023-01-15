@@ -162,3 +162,4 @@ dist
 !src/index.html
 !tailwind.config.js
 !src/assets/styles/main.css
+!src/assets/js/**/*.js
