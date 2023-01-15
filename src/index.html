@@ -12,6 +12,32 @@
   <link rel="stylesheet" href="./assets/styles/production.css" />
 </head>
 <body>
-  <h1 class="text-4xl font-bold">Tailwind started kit!</h1>
+  <!-- Nav container -->
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex container for all elements -->
+    <div class="flex items-center justify-between">
+      <!-- Flex container for logo/menu -->
+      <div class="flex items-center space-x-20">
+        <!-- Logo -->
+        <img src="./assets/images/logo.svg" alt="logo" />
+        <!-- Left menu -->
+        <div class="hidden lg:flex space-x-8 font-bold">
+          <a href="#" class="text-grayishViolet hover:text-verDarkViolet">Features</a>
+          <a href="#" class="text-grayishViolet hover:text-verDarkViolet">Pricing</a>
+          <a href="#" class="text-grayishViolet hover:text-verDarkViolet">Resources</a>
+        </div>
+      </div>
+
+      <!-- Right buttons menu -->
+      <div class="hidden items-center spacex-6 font-bold text-grayishViolet lg:flex">
+        <a href="#" class="hover:text-verDarkViolet">Login</a>
+        <a href="#" class="ml-5 px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70">Sign up</a>
+      </div>
+
+      <!-- TODO: Hamburger menu -->
+    </div>
+
+    <!-- TODO: Mobile menu -->
+  </nav>
 </body>
 </html>
