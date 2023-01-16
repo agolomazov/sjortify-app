@@ -2,9 +2,12 @@ const input = document.getElementById('link-input');
 const errMsg = document.getElementById("err-msg");
 const linkForm = document.getElementById("link-form");
 
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById('menu');
+
 linkForm.addEventListener('submit', formSubmit);
 input.addEventListener('keydown', clearErrorMsg);
-
+menuBtn.addEventListener('click', navToggle);
 
 function formSubmit(e) {
   e.preventDefault();
@@ -32,4 +35,11 @@ function validateUrl(value) {
 
 function clearErrorMsg() {
   errMsg.innerText = "";
+}
+
+function navToggle(e) {
+  e.preventDefault();
+
+  menuBtn.classList.toggle('open');
+  mobileMenu.classList.toggle('hidden').toggle('flex');
 }
